@@ -20,6 +20,12 @@ class ProductsController extends Controller
         return view('products.annonce');
     }
 
+    public function Reussite()
+    {
+       
+        return view('products.reussite');
+    }
+
     public function show(Request $request, $id)
     {
        $product = Product::findOrFail($id);
